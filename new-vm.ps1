@@ -1,4 +1,4 @@
-$resourceGoupName = 'webserverrsg'
+$resourceGroupName = 'webserverrsg'
 $azureRegion = 'West Europe'
 $vmName = 'webservervm'
 
