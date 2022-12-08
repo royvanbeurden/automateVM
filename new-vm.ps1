@@ -2,7 +2,6 @@ $resourceGoupName = 'webserverrsg'
 $azureRegion = 'West Europe'
 $vmName = 'webservervm'
 
-#Create the resource group
 New-AzResourceGroup -Name $resourceGoupName -Location $azureRegion
 
 New-AzVm `
@@ -12,7 +11,7 @@ New-AzVm `
     -Image = UbuntuTLS `
     -size = Standard_B2s `
     -PublicIpAddressName = myPubIP `
-    -OpenPorts = 80 `
+    -OpenPorts 80 `
     -GenerateSshKey `
     -SshKeyName = mySSHKey
     
